@@ -1,0 +1,22 @@
+{# Education section. #}
+<section id="education">
+  <h2>{{ cv.titles.education }}</h2>
+  {% for ed in cv.education %}
+    <article class="card with-logo">
+      {% include "cv_assignment/partials/logo.html" with item=ed %}
+      <div class="card-body">
+        <div class="card-head">
+          <h3>{{ ed.degree }}</h3>
+          <span class="dates">{{ ed.start }} - {{ ed.end }}</span>
+        </div>
+        <p class="muted">{{ ed.school }}{% if ed.cgpa %} [{{ cv.ui.cgpa }} {{ ed.cgpa }}]{% endif %}</p>
+        {% if ed.details %}<p>{{ ed.details }}</p>{% endif %}
+        {% if ed.coursework %}
+          <p class="tags"><strong>{{ cv.ui.coursework }}:</strong> {{ ed.coursework|join:", " }}</p>
+        {% endif %}
+      </div>
+    </article>
+  {% empty %}
+    <p class="muted">{{ cv.ui.empty }}</p>
+  {% endfor %}
+</section>

@@ -1,0 +1,9 @@
+{# Experience section. #}
+<section id="experience">
+  <h2>{{ cv.titles.experience }}</h2>
+  {% for job in cv.experience %}
+    {% include "cv_assignment/partials/experience_entry.html" %}
+  {% empty %}
+    <p class="muted">{{ cv.ui.empty }}</p>
+  {% endfor %}
+</section>

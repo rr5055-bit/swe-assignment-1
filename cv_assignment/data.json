@@ -1,0 +1,391 @@
+{
+  "header": {
+    "name": "Rohan Aditya Ram",
+    "title": "Full Stack & AI Engineer · M.S. Computer Science @ NYU Tandon",
+    "location": "New York, USA",
+    "photo": "profile.jpeg",
+    "links": [
+      {
+        "label": "Email",
+        "url": "mailto:rr5055@nyu.edu"
+      },
+      {
+        "label": "Phone",
+        "url": "tel:+19297744207"
+      },
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/in/rohan-aditya/"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/rohanaditya/"
+      },
+      {
+        "label": "Portfolio",
+        "url": "https://rohanaditya.github.io/portfolio"
+      }
+    ],
+    "summary": "Computer Science graduate student with strong expertise in full stack software development, microservices architecture and cross-functional team collaboration. Passionate about building robust enterprise applications on multi-cloud infrastructure and advanced AI technologies."
+  },
+  "experience": [
+    {
+      "organization": "New York University Office of Global Services",
+      "role": "Graduate Student Employee",
+      "logo": "NYU.png",
+      "start": "2026",
+      "end": null,
+      "bullets": [
+        "Graduate Student Employee in the operations team."
+      ]
+    },
+    {
+      "organization": "New York University",
+      "role": "Teaching Assistant, Intro to Blockchain & Distributed Ledger Technology",
+      "logo": "NYU.png",
+      "start": "2026",
+      "end": null,
+      "bullets": [
+        "Teaching Assistant for the Introduction to Blockchain and Distributed Ledger Technology course."
+      ]
+    },
+    {
+      "organization": "Bounteous, India",
+      "role": "Full Stack Software Dev Lead",
+      "logo": "bounteous.png",
+      "start": "2024",
+      "end": "2025",
+      "bullets": [
+        "Reduced RFQ response latency by 99.9%, from 6 weeks to 5 minutes per request, by architecting a cloud-native Agentic AI solution utilizing a React-based chat frontend and an Azure-based backend.",
+        "Fully automated the extraction and structured storage of vendor data by building the Control Tower AI agent using OpenAI LLMs, Azure Blob Storage, and Azure Functions, while leading all code review efforts.",
+        "Enhanced project cost estimation accuracy and transparency by developing the Rapid Cost RAG based LLM to provide automated cost predictions with data-backed reasoning for construction bids, with APIs to enable the frontend chat functionality.",
+        "Led sprint demos and stakeholder communication across the SDLC to ensure on time project delivery.",
+        "Resolved 4 of 9 tracked issues on a marketing campaign tracking tool, implementing frontend and backend fixes (React, Node.js) to improve campaign status visibility and reduce manual effort by 2 minutes per campaign tracked."
+      ]
+    },
+    {
+      "organization": "Bounteous, India",
+      "role": "Full Stack Software Engineer",
+      "logo": "bounteous.png",
+      "start": "2023",
+      "end": "2024",
+      "bullets": [
+        "Upgraded 78 JavaScript pipeline scripts across 4 Fusion AI search pipelines from legacy JS to ES6, restoring failed pipelines and ensuring uninterrupted real-time product search and recommendations on a glass manufacturer's website with 10000+ SKUs.",
+        "Improved server-side logic using SQL server, reducing the number of database calls by over 45%.",
+        "Designed and developed 3 of 7 APIs to connect to legacy microservices, enabling modern systems to integrate without direct dependency on legacy interfaces, including end-to-end ownership of 1 API with full API specification documentation."
+      ]
+    },
+    {
+      "organization": "Bounteous, India",
+      "role": "Software Engineering Intern",
+      "logo": "bounteous.png",
+      "start": "2023",
+      "end": "2023",
+      "bullets": [
+        "Developed a customer support portal for an S&P 500 global life sciences company.",
+        "Built and tested scalable microservices following enterprise level application architecture."
+      ]
+    },
+    {
+      "organization": "4thVenture IoTSpace Pvt. Ltd.",
+      "role": "Data Analytics Intern",
+      "logo": "4thventure.png",
+      "start": "2021",
+      "end": "2021",
+      "bullets": [
+        "Analysed patterns in time series data and worked on Machine Learning models for smart IoT systems."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "HousiFi - Realestate Tokenization",
+      "year": "2026",
+      "image": "housifi.png",
+      "description": "Fractional real estate investment on Sepolia. Users pool a down payment by buying a majority (85%) or minority (15%) share of a property. Ownership and payouts are settled on-chain via ERC-20 property tokens and USDC.",
+      "tags": [
+        "Next.js",
+        "TypeScript",
+        "React",
+        "ether.js",
+        "Solidity",
+        "Hardhat"
+      ],
+      "repo": "https://github.com/rohanaditya/HousiFi",
+      "live": null
+    },
+    {
+      "title": "Domino - A Supply Chain Vulnerability Dashboard",
+      "year": "2026",
+      "image": "domino.png",
+      "description": "Models how disruptions to global commodity trade propagate through production chains and affect countries worldwide. Built on eleven years of bilateral trade data (~100 million rows) with a four-step cascade simulation across 23,760 shock scenarios. Spark on Google Cloud Dataproc with GraphFrames, an async FastAPI service on MongoDB Atlas, and a React/D3.js frontend centered on a rotatable 3D globe.",
+      "tags": [
+        "Next.js",
+        "MongoDB",
+        "PySpark",
+        "Knowledge Graphs",
+        "D3.js",
+        "PageRank"
+      ],
+      "repo": "https://github.com/VighneshHemnani/domino-trade-big-data-project/tree/main",
+      "live": "https://domino-big-data-project.netlify.app"
+    },
+    {
+      "title": "Erica - A Text-based AI Tutor",
+      "year": "2025",
+      "image": "erica.png",
+      "description": "Uses a GraphRAG pipeline with knowledge graphs and LLMs for query retrieval and explanation generation, implementing end-to-end ingestion, graph construction, and subgraph-based query answering over multimodal course content.",
+      "tags": [
+        "GraphRAG",
+        "LLMs",
+        "Knowledge Graphs",
+        "Python"
+      ],
+      "repo": "https://github.com/rr5055-bit/eng-ai-agents/tree/main/project",
+      "live": null
+    },
+    {
+      "title": "Automatic Number Plate Recognition",
+      "year": "2023",
+      "image": "anpr.png",
+      "description": "A deep learning system that uses MobileNet CNN, TensorFlow and an object detection model to read number plates and achieved an accuracy of 92% on images with poor lighting, glare and obstructions.",
+      "tags": [
+        "Python",
+        "OCR",
+        "CV",
+        "TensorFlow",
+        "CNN"
+      ],
+      "repo": null,
+      "live": null
+    },
+    {
+      "title": "AI enabled B2B Full-Stack Fintech Application",
+      "year": "2022",
+      "image": "b2b-saas.png",
+      "description": "A full-stack invoice management application with an integrated ML model to predict payment dates and vendor defaults with delays duration.",
+      "tags": [
+        "React",
+        "Node.js",
+        "ML",
+        "Finance APIs"
+      ],
+      "repo": null,
+      "live": null
+    },
+    {
+      "title": "Research: Data Driven study on Chennai's Water Crisis",
+      "year": "2022",
+      "image": "chennai.png",
+      "description": "Performed elaborate EDA of the reservoir levels, rainfall levels, urbanisation growth, soil quality and built an LSTM model to predict levels in the future. Paper was submitted to Indo Joint Research Call for Proposals 2021 by the Department of Science and Technology (DST), Government of India.",
+      "tags": [
+        "Python",
+        "Pandas",
+        "ML Models",
+        "EDA",
+        "Data Visualization"
+      ],
+      "repo": null,
+      "live": null
+    },
+    {
+      "title": "Systematic Trading",
+      "year": "2021",
+      "image": "systematic-trading.png",
+      "description": "Built a systematic trading system that uses data driven models, technical indicators and predefined rules to generate and execute trades automatically in real time.",
+      "tags": [
+        "Python",
+        "Data Analysis",
+        "Trading APIs"
+      ],
+      "repo": null,
+      "live": null
+    }
+  ],
+  "opensource": [
+    {
+      "project": "FINOS Open Resource Broker",
+      "detail": "Contributed a React/Vite/Tailwind UI dashboard."
+    },
+    {
+      "project": "FINOS TraderX",
+      "detail": "Contributor."
+    }
+  ],
+  "education": [
+    {
+      "school": "New York University (Tandon School of Engineering)",
+      "degree": "Master of Science in Computer Science",
+      "logo": "NYU.png",
+      "start": "2025",
+      "end": "2027",
+      "cgpa": "3.61 / 4",
+      "details": "Graduate program focused on advanced software engineering and AI technologies.",
+      "coursework": [
+        "Design and Analysis of Algorithms I",
+        "Artificial Intelligence I",
+        "Foundations of Fintech",
+        "Big Data",
+        "Cloud Computing",
+        "Intro to Blockchain & Distributed Ledger Tech"
+      ]
+    },
+    {
+      "school": "SRM Institute of Science and Technology",
+      "degree": "Bachelor of Technology in Computer Science and Engineering",
+      "logo": "SRM.png",
+      "start": "2019",
+      "end": "2023",
+      "cgpa": "9.27 / 10",
+      "details": "Undergraduate degree with a focus on software development, system design, and applied computing.",
+      "coursework": [
+        "Artificial Intelligence",
+        "Natural Language Processing",
+        "Full Stack Development with MERN",
+        "Data Structures and Algorithms",
+        "Database Management Systems",
+        "Data Mining and Analytics",
+        "Operating Systems",
+        "Computer Networks",
+        "Compiler Design"
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Securing the AI/ML Supply Chain",
+      "issuer": "Chainguard",
+      "year": "2026",
+      "logo": "chainguard.png",
+      "url": "https://www.credly.com/badges/4007f2a3-d539-41d8-b0e6-a4268c1161c7"
+    },
+    {
+      "title": "Chainguard Container Crusader",
+      "issuer": "Chainguard",
+      "year": "2026",
+      "logo": "chainguard.png",
+      "url": "https://www.credly.com/badges/e8e333a7-d750-4569-bc99-0c2a41ec403d"
+    },
+    {
+      "title": "Docker Foundations Professional Certificate",
+      "issuer": "Docker",
+      "year": "2026",
+      "logo": "docker.png",
+      "url": null
+    },
+    {
+      "title": "Google Cloud Certified Digital Leader",
+      "issuer": "Google Cloud",
+      "year": "2025",
+      "logo": "gcp.png",
+      "url": "https://www.credly.com/badges/ee9fc2b6-c4cd-4bda-94fa-4b63455c1ee1"
+    },
+    {
+      "title": "Google Cloud Certified Gen AI Leader",
+      "issuer": "Google Cloud",
+      "year": "2025",
+      "logo": "gcp.png",
+      "url": "https://www.credly.com/badges/9dd115f8-6b3f-445c-a452-1260aaa50d9e"
+    },
+    {
+      "title": "Oracle Cloud Infrastructure Certified",
+      "issuer": "Oracle",
+      "year": "2021",
+      "logo": "oracle.png",
+      "url": null
+    }
+  ],
+  "skills": {
+    "AI": [
+      "Agentic AI",
+      "RAG Architectures",
+      "LLM Implementation",
+      "NLP"
+    ],
+    "Languages": [
+      "Python",
+      "Java",
+      "C#",
+      "SQL"
+    ],
+    "Frameworks": [
+      ".NET",
+      "Node.js",
+      "React.js",
+      "Angular",
+      "Spring Boot"
+    ],
+    "Cloud & DevOps": [
+      "AWS",
+      "Azure",
+      "Google Cloud Platform",
+      "Kubernetes",
+      "Docker"
+    ],
+    "Data & Architecture": [
+      "MongoDB",
+      "Apache Spark",
+      "Microservices"
+    ]
+  },
+  "achievements": [
+    "Won the Rain track at the Raingentic Commerce Hackathon (NYC).",
+    "5th place, Everesteer Hedge Fund Hackathon (NYC, Sep 2026).",
+    "Presented a CALM + AIGF compliance tool concept at the FINOS AWS Builder Hackathon (June 2026)."
+  ],
+  "extracurricular": [
+    {
+      "title": "Professional Cricketer",
+      "start": "2019",
+      "end": "2024",
+      "logo": "cricket.png",
+      "description": "Competed at professional level in cricket."
+    },
+    {
+      "title": "HOPE Orphanage Sports Event Volunteer",
+      "start": "2019",
+      "end": "2019",
+      "logo": "volunteer.png",
+      "description": "Organized and volunteered for sports events at HOPE Orphanage."
+    },
+    {
+      "title": "Actor",
+      "start": "2018",
+      "end": "2018",
+      "logo": "actor.png",
+      "description": "Performed in various theatrical productions."
+    }
+  ],
+  "titles": {
+    "experience": "Experience",
+    "projects": "Projects",
+    "opensource": "Open Source",
+    "education": "Education",
+    "certifications": "Certifications",
+    "skills": "Skills",
+    "achievements": "Achievements",
+    "extracurricular": "Volunteership & Extracurricular"
+  },
+  "ui": {
+    "empty": "Details to be added.",
+    "present": "Present",
+    "cgpa": "CGPA",
+    "coursework": "Coursework",
+    "code": "Code",
+    "live": "Live demo",
+    "credential": "View credential",
+    "print_hint": "Print / Save as PDF",
+    "sections_nav": "Sections",
+    "home": "Full CV"
+  },
+  "sections": [
+    "experience",
+    "projects",
+    "opensource",
+    "education",
+    "certifications",
+    "skills",
+    "achievements",
+    "extracurricular"
+  ]
+}

@@ -1,0 +1,11 @@
+{# Open source section. #}
+<section id="opensource">
+  <h2>{{ cv.titles.opensource }}</h2>
+  <ul>
+    {% for item in cv.opensource %}
+      <li><strong>{{ item.project }}</strong>{% if item.detail %}: {{ item.detail }}{% endif %}</li>
+    {% empty %}
+      <li class="muted">{{ cv.ui.empty }}</li>
+    {% endfor %}
+  </ul>
+</section>

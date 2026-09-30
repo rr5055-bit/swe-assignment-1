@@ -1,0 +1,16 @@
+{# Volunteership and extracurricular section. #}
+<section id="extracurricular">
+  <h2>{{ cv.titles.extracurricular }}</h2>
+  {% for e in cv.extracurricular %}
+    <article class="card with-logo">
+      {% include "cv_assignment/partials/logo.html" with item=e %}
+      <div class="card-body">
+        <h3>{{ e.title }}</h3>
+        <p class="muted">{% if e.start == e.end %}{{ e.start }}{% else %}{{ e.start }} - {{ e.end }}{% endif %}</p>
+        <p>{{ e.description }}</p>
+      </div>
+    </article>
+  {% empty %}
+    <p class="muted">{{ cv.ui.empty }}</p>
+  {% endfor %}
+</section>

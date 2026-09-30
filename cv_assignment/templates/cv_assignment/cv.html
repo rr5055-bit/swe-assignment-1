@@ -1,0 +1,83 @@
+{% extends "cv_assignment/base.html" %}
+{% load static %}
+{% comment %}Full CV page: one partial per section.{% endcomment %}
+
+{% block title %}{{ cv.header.name }}{% endblock %}
+
+{% block header %}
+  {% include "cv_assignment/partials/header.html" %}
+{% endblock %}
+
+{% block content %}
+
+  {% partialdef project_card %}
+    <article class="card project">
+      {% if project.image %}
+        <img class="thumb" src="{% static 'cv_assignment/img/'|add:project.image %}" alt="" loading="lazy">
+      {% endif %}
+      <div class="card-body">
+        <h3>{{ project.title }}</h3>
+        <p class="muted">{{ project.year }}</p>
+        <p>{{ project.description }}</p>
+        {% if project.tags %}
+          <p>{% for t in project.tags %}<span class="chip">{{ t }}</span>{% endfor %}</p>
+        {% endif %}
+        {% if project.repo or project.live %}
+          <p class="actions">
+            {% if project.repo %}<a href="{{ project.repo }}">{{ cv.ui.code }}</a>{% endif %}
+            {% if project.live %}<a href="{{ project.live }}">{{ cv.ui.live }}</a>{% endif %}
+          </p>
+        {% endif %}
+      </div>
+    </article>
+  {% endpartialdef %}
+
+  {% partialdef experience_section %}
+    {% include "cv_assignment/partials/section_experience.html" %}
+  {% endpartialdef %}
+
+  {% partialdef projects_section %}
+    <section id="projects">
+      <h2>{{ cv.titles.projects }} <span class="count">({{ cv.projects|length }})</span></h2>
+      {% for project in cv.projects %}
+        {% partial project_card %}
+      {% empty %}
+        <p class="muted">{{ cv.ui.empty }}</p>
+      {% endfor %}
+    </section>
+  {% endpartialdef %}
+
+  {% partialdef opensource_section %}
+    {% include "cv_assignment/partials/section_opensource.html" %}
+  {% endpartialdef %}
+
+  {% partialdef education_section %}
+    {% include "cv_assignment/partials/section_education.html" %}
+  {% endpartialdef %}
+
+  {% partialdef skills_section %}
+    {% include "cv_assignment/partials/section_skills.html" %}
+  {% endpartialdef %}
+
+  {% partialdef achievements_section %}
+    {% include "cv_assignment/partials/section_achievements.html" %}
+  {% endpartialdef %}
+
+  {% partialdef extracurricular_section %}
+    {% include "cv_assignment/partials/section_extracurricular.html" %}
+  {% endpartialdef %}
+
+  {% partialdef certifications_section %}
+    {% include "cv_assignment/partials/section_certifications.html" %}
+  {% endpartialdef %}
+
+  {% partial experience_section %}
+  {% partial projects_section %}
+  {% partial opensource_section %}
+  {% partial education_section %}
+  {% partial certifications_section %}
+  {% partial skills_section %}
+  {% partial achievements_section %}
+  {% partial extracurricular_section %}
+
+{% endblock %}

@@ -1,0 +1,27 @@
+{% load static cv_extras %}
+{# Page header: photo, name, summary, links and section nav. #}
+<header class="band">
+  <div class="band-inner">
+    {% if cv.header.photo %}
+      <img class="photo" src="{% static 'cv_assignment/img/'|add:cv.header.photo %}" alt="{{ cv.header.name }}">
+    {% endif %}
+    <div class="intro">
+      <h1>{{ cv.header.name }}</h1>
+      <p class="title">{{ cv.header.title }}</p>
+      <p class="meta">{{ cv.header.location }}</p>
+      <p class="summary">{{ cv.header.summary }}</p>
+      <ul class="links">
+        {% for link in cv.header.links %}
+          {% if link.url %}<li><a href="{{ link.url }}">{{ link.label }}</a></li>{% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <nav class="section-nav" aria-label="{{ cv.ui.sections_nav }}">
+    <a href="{% url 'cv_assignment:home' %}">{{ cv.ui.home }}</a>
+    {% for name in cv.sections %}
+      <a href="#{{ name }}">{{ cv.titles|get_item:name }}</a>
+    {% endfor %}
+    <a href="#" onclick="window.print(); return false;">{{ cv.ui.print_hint }}</a>
+  </nav>
+</header>

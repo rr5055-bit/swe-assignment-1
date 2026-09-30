@@ -1,0 +1,16 @@
+{# One experience card for a "job" in the context. #}
+<article class="card with-logo">
+  {% include "cv_assignment/partials/logo.html" with item=job %}
+  <div class="card-body">
+    <div class="card-head">
+      <h3>{{ job.organization }}</h3>
+      <span class="dates">{% if job.start == job.end %}{{ job.start }}{% else %}{{ job.start }} - {% if job.end %}{{ job.end }}{% else %}{{ cv.ui.present }}{% endif %}{% endif %}</span>
+    </div>
+    <p class="muted">{{ job.role }}</p>
+    {% if job.bullets %}
+      <ul>
+        {% for bullet in job.bullets %}<li>{{ bullet }}</li>{% endfor %}
+      </ul>
+    {% endif %}
+  </div>
+</article>

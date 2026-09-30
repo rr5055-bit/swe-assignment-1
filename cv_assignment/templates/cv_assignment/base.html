@@ -1,0 +1,22 @@
+{% load static %}
+{# Base layout; pages extend it and fill its blocks. #}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}{{ site_owner }}{% endblock %}</title>
+  <link rel="stylesheet" href="{% static 'cv_assignment/style.css' %}">
+</head>
+<body>
+  {% block header %}{% endblock %}
+  <main class="page">
+    {% block content %}{% endblock %}
+  </main>
+  <footer class="site-footer">
+    {% block footer %}
+      <p>&copy; {{ current_year }} {{ site_owner }}</p>
+    {% endblock %}
+  </footer>
+</body>
+</html>

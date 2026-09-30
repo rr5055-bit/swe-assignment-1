@@ -1,0 +1,11 @@
+{# Achievements section. #}
+<section id="achievements">
+  <h2>{{ cv.titles.achievements }}</h2>
+  <ul>
+    {% for a in cv.achievements %}
+      <li>{{ a }}</li>
+    {% empty %}
+      <li class="muted">{{ cv.ui.empty }}</li>
+    {% endfor %}
+  </ul>
+</section>

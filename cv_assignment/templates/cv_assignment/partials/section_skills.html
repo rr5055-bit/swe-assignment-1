@@ -1,0 +1,12 @@
+{# Skills section. #}
+<section id="skills">
+  <h2>{{ cv.titles.skills }}</h2>
+  <dl class="skills">
+    {% for category, items in cv.skills.items %}
+      <dt>{{ category }}</dt>
+      <dd>{% for s in items %}<span class="chip">{{ s }}</span>{% endfor %}</dd>
+    {% empty %}
+      <dd class="muted">{{ cv.ui.empty }}</dd>
+    {% endfor %}
+  </dl>
+</section>

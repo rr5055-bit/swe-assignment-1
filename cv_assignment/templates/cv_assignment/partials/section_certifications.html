@@ -1,0 +1,18 @@
+<!-- Certifications section -->
+<section id="certifications">
+  <h2>{{ cv.titles.certifications }} <span class="count">({{ cv.certifications|length }})</span></h2>
+  {% for c in cv.certifications %}
+    <article class="card with-logo">
+      {% include "cv_assignment/partials/logo.html" with item=c %}
+      <div class="card-body">
+        <h3>{{ c.title }}</h3>
+        <p class="muted">
+          {{ c.issuer }} ({{ c.year }})
+          {% if c.url %}· <a href="{{ c.url }}">{{ cv.ui.credential }}</a>{% endif %}
+        </p>
+      </div>
+    </article>
+  {% empty %}
+    <p class="muted">{{ cv.ui.empty }}</p>
+  {% endfor %}
+</section>
